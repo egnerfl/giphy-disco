@@ -4,7 +4,6 @@ import { HostListener } from '@angular/core';
 import { Http, ResponseContentType } from '@angular/http';
 import { ChangeDetectorRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { setInterval } from 'timers';
 
 @Component({
   selector: 'app-root',
