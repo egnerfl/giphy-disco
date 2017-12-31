@@ -1,0 +1,18 @@
+<img class="background" [src]="backgroundUrl">
+<img class="foreground" [src]="foregroundUrl">
+
+<div class="settings" *ngIf="displaySettings">
+    <input id="backgroundTag" type="text" [(ngModel)]="backgroundTag">
+    <input type="text" [(ngModel)]="backgroundUrl">
+    <button (click)="updateBackgroundUrl()" [disabled]="backgroundUpdate">Set</button>
+
+    <br>
+
+    <input id="foregroundTag" type="text" [(ngModel)]="foregroundTag">
+    <input type="text" [(ngModel)]="foregroundUrl">
+    <button (click)="updateForegroundUrl()" [disabled]="foregroundUpdate">Set</button>
+
+    <br>
+
+    <button (click)="toggleTimer()">{{ timer ? 'Disable Timer' : 'Enable Timer' }}</button>
+</div>
